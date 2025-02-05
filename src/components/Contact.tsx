@@ -9,12 +9,12 @@ export const Contact = () => {
           <div className="flex flex-col items-center text-center">
             <Mail className="w-12 h-12 mb-4 text-red-600" />
             <h3 className="text-xl font-bold mb-2">Email</h3>
-            <p>contact@sg-service.com</p>
+            <p>sgservice@gmail.com</p>
           </div>
           <div className="flex flex-col items-center text-center">
             <Phone className="w-12 h-12 mb-4 text-red-600" />
             <h3 className="text-xl font-bold mb-2">Phone</h3>
-            <p>+1 (555) 123-4567</p>
+            <p>+33 (0) 749570675 </p>
           </div>
           <div className="flex flex-col items-center text-center">
             <MapPin className="w-12 h-12 mb-4 text-red-600" />

@@ -22,7 +22,7 @@ const Navigation = () => {
                   <div className="grid grid-cols-1 gap-2">
                     <NavigationMenuLink asChild>
                       <Link to="/formations/analyse-donnees" className="block p-2 hover:bg-red-600">
-                        Analyse de Données
+                        Traitement et Analyse de Données
                       </Link>
                     </NavigationMenuLink>
                     <NavigationMenuLink asChild>
