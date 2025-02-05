@@ -18,15 +18,32 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            SG-SERVICE
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8">
-            Excellence in Data Analysis & Processing
+          {/* Logo */}
+          <div className="mb-8">
+            <img 
+              src="/lovable-uploads/0e2d439e-e5b1-47f7-8d24-89ccea39077a.png"
+              alt="SG-SERVICE Logo"
+              className="mx-auto h-32 md:h-40"
+            />
+          </div>
+          
+          {/* Tagline */}
+          <h2 className="text-xl md:text-2xl text-gray-300 mb-8 font-light italic">
+            Notre seul but, faire parler la donnée
+          </h2>
+          
+          {/* Description */}
+          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Centre d'excellence en traitement et analyse des données
           </p>
-          <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-colors">
-            Discover Our Services
-          </button>
+          
+          <motion.button 
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-colors"
+          >
+            Découvrir nos services
+          </motion.button>
         </motion.div>
       </div>
     </div>
