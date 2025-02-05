@@ -2,8 +2,16 @@ import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <div className="min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-black to-gray-900 text-white">
-      <div className="container mx-auto px-4">
+    <div className="min-h-[80vh] relative flex items-center justify-center bg-gradient-to-br from-black to-gray-900 text-white overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1531297484001-80022131f5a1" 
+          alt="Data Analysis Background" 
+          className="w-full h-full object-cover opacity-20"
+        />
+      </div>
+      <div className="container mx-auto px-4 z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
