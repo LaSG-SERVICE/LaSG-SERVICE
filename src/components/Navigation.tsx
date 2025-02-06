@@ -1,5 +1,4 @@
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
-import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
@@ -27,7 +26,27 @@ const Navigation = () => {
                     </NavigationMenuLink>
                     <NavigationMenuLink asChild>
                       <Link to="/formations/machine-learning" className="block p-2 hover:bg-red-600">
-                        Machine Learning
+                        Machine Learning & IA
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link to="/formations/big-data" className="block p-2 hover:bg-red-600">
+                        Big Data & Data Engineering
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link to="/formations/data-viz" className="block p-2 hover:bg-red-600">
+                        Data Visualisation & BI
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link to="/formations/statistiques" className="block p-2 hover:bg-red-600">
+                        Statistiques Avancées
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link to="/formations/python-r" className="block p-2 hover:bg-red-600">
+                        Programmation Python & R
                       </Link>
                     </NavigationMenuLink>
                   </div>
