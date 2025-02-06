@@ -4,28 +4,31 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const courses = [
   {
-    title: "Analyse de Données Avancée",
+    title: "Les cours sur les analyses de données sur Youtube",
     description: "Maîtrisez les techniques d'analyse de données modernes",
     duration: "8 semaines",
     students: 120,
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070"
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070",
+    link: "https://www.youtube.com/channel/UCRfCp9SSZ2PKmTNknhziUVQ"
   },
   {
-    title: "Machine Learning Fondamental",
+    title: "Les postes sur les methodes de traitement et d'analyse des données sur linkedin",
     description: "Introduction aux concepts clés du machine learning",
     duration: "10 semaines",
     students: 85,
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=2070"
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=2070",
+    link: "https://www.linkedin.com/company/102166985/admin/dashboard/"
   },
   {
-    title: "Visualisation de Données",
+    title: "Postes sur Facebook",
     description: "Créez des visualisations de données percutantes",
     duration: "6 semaines",
     students: 95,
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015"
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
+    link: "https://www.facebook.com/profile.php?id=100088854925502"
   }
 ];
 
@@ -80,9 +83,14 @@ export const Courses = () => {
                       <span>{course.rating}</span>
                     </div>
                   </div>
-                  <button className="mt-4 w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300">
-                    S'inscrire au cours
-                  </button>
+                  <a 
+                    href={course.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="mt-4 w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300 block text-center"
+                  >
+                    Accéder au cours
+                  </a>
                 </CardContent>
               </Card>
             </motion.div>
