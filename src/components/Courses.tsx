@@ -1,32 +1,32 @@
 import { motion } from "framer-motion";
-import { BookOpen, Clock, Users, Star } from "lucide-react";
+import { Users, Eye, UserPlus } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const courses = [
   {
     title: "Les cours sur les analyses de données sur Youtube",
     description: "Maîtrisez les techniques d'analyse de données modernes",
-    duration: "8 semaines",
-    students: 120,
-    rating: 4.8,
+    subscribers: "1.2K",
+    views: "15K",
+    visitors: "8K",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070",
     link: "https://www.youtube.com/channel/UCRfCp9SSZ2PKmTNknhziUVQ"
   },
   {
     title: "Les postes sur les methodes de traitement et d'analyse des données sur linkedin",
     description: "Introduction aux concepts clés du machine learning",
-    duration: "10 semaines",
-    students: 85,
-    rating: 4.9,
+    subscribers: "850",
+    views: "12K",
+    visitors: "5K",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070",
     link: "https://www.linkedin.com/company/102166985/admin/dashboard/"
   },
   {
     title: "Postes sur Facebook",
     description: "Créez des visualisations de données percutantes",
-    duration: "6 semaines",
-    students: 95,
-    rating: 4.7,
+    subscribers: "950",
+    views: "10K",
+    visitors: "6K",
     image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2070",
     link: "https://www.facebook.com/profile.php?id=100088854925502"
   }
@@ -71,16 +71,16 @@ export const Courses = () => {
                 <CardContent>
                   <div className="flex justify-between items-center text-sm text-gray-600">
                     <div className="flex items-center gap-1">
-                      <Clock className="w-4 h-4" />
-                      <span>{course.duration}</span>
+                      <UserPlus className="w-4 h-4" />
+                      <span>{course.subscribers} abonnés</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Eye className="w-4 h-4" />
+                      <span>{course.views} vues</span>
                     </div>
                     <div className="flex items-center gap-1">
                       <Users className="w-4 h-4" />
-                      <span>{course.students} étudiants</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Star className="w-4 h-4 text-yellow-400" />
-                      <span>{course.rating}</span>
+                      <span>{course.visitors} visiteurs</span>
                     </div>
                   </div>
                   <a 
