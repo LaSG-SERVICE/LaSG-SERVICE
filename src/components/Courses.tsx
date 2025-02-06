@@ -9,7 +9,7 @@ const courses = [
     duration: "8 semaines",
     students: 120,
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070",
     link: "https://www.youtube.com/channel/UCRfCp9SSZ2PKmTNknhziUVQ"
   },
   {
@@ -18,7 +18,7 @@ const courses = [
     duration: "10 semaines",
     students: 85,
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=2070",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070",
     link: "https://www.linkedin.com/company/102166985/admin/dashboard/"
   },
   {
@@ -27,7 +27,7 @@ const courses = [
     duration: "6 semaines",
     students: 95,
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
+    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2070",
     link: "https://www.facebook.com/profile.php?id=100088854925502"
   }
 ];
@@ -42,9 +42,9 @@ export const Courses = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold mb-4">Nos Cours</h2>
+          <h2 className="text-4xl font-bold mb-4">Nos Réseaux Sociaux</h2>
           <p className="text-xl text-gray-600">
-            Développez vos compétences en analyse de données avec nos cours experts
+            Suivez-nous sur les réseaux sociaux pour plus de contenu sur l'analyse de données
           </p>
         </motion.div>
 

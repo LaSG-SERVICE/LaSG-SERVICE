@@ -55,7 +55,7 @@ const Navigation = () => {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link to="/cours" className="text-white hover:text-red-500 transition-colors">
-                Cours
+                Réseaux Sociaux
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
